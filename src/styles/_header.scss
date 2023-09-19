@@ -1,0 +1,14 @@
+@use "variables";
+
+.header {
+  margin-bottom: 50px;
+  &__container {
+    max-width: variables.$max_width;
+    padding: 15px;
+    margin: 0 auto;
+    &__img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

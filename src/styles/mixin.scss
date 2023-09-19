@@ -1,0 +1,16 @@
+@use "variables";
+
+@mixin text($fontSize: 16px) {
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+  color: variables.$textMainColor;
+}
+
+@mixin title($fontSize: 40px) {
+  @include text($fontSize);
+  color: variables.$textSecondaryColor;
+}
+
+.text {
+  @include text;
+}
