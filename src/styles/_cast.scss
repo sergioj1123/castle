@@ -1,0 +1,36 @@
+@use "variables";
+.cast {
+  max-width: variables.$max_width;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 15px;
+
+  &__container__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
+    &__item {
+      max-width: 300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid variables.$textMainColor;
+      border-radius: 10px;
+      padding: 5px;
+
+      &__img {
+        max-height: 300px;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

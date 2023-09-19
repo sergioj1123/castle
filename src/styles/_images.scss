@@ -1,0 +1,26 @@
+@use "variables";
+
+.images {
+  padding: 15px;
+  max-width: variables.$max_width;
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5px;
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+
+    &__item {
+      max-width: 180px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

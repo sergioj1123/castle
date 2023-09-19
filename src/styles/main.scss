@@ -2,6 +2,8 @@
 @use "mixin";
 @use "_header";
 @use "_about";
+@use "_cast";
+@use "_images";
 
 @font-face {
   font-family: Avenir;
@@ -26,9 +28,23 @@ body {
   background-color: variables.$backgroundColor;
 }
 
-.paragrapy {
+img {
+  border-radius: 10px;
+}
+
+.paragrapy,
+.text {
   @include mixin.text;
   margin-bottom: 5px;
+}
+
+.paragrapy {
+  width: 100%;
+}
+
+.bold {
+  @include mixin.text;
+  font-weight: 700;
 }
 
 .section-title {
